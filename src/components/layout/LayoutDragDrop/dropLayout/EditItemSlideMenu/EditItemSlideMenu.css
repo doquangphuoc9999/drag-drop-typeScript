@@ -1,0 +1,7 @@
+.EditItemSlideMenu {
+    display: block;
+}
+
+.EditItemSlideMenu.Hidden {
+    display: none;
+}

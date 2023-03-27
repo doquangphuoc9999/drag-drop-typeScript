@@ -1,0 +1,15 @@
+.drapdropStyles {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.drapdropStyles .item {
+    min-height: 25px;
+}
+
+.dragStyle {
+    border-right: 2px solid #dfdfdf;
+    margin-right: 2%;
+}

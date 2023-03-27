@@ -1,0 +1,12 @@
+.SideBarNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    flex-grow: 1;
+}
+
+.SideBarNav.Active {
+    background-color: #fff;
+    border-bottom: none;
+}

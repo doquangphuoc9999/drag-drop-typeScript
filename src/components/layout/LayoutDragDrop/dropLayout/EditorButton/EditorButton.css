@@ -1,0 +1,22 @@
+.EditorButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    height: 98px;
+    width: 98px;
+}
+.EditorButton a{
+    text-decoration: none;
+}
+.title{
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    color: #414245;
+}
+
+.imgEditorButton{
+    position: relative;
+    width: 94px;
+}
