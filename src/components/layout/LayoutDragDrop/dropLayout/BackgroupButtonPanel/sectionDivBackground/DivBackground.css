@@ -1,0 +1,45 @@
+.wrapper-backgroundProps {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.wrapper-backgroundProps label {
+    font-size: 16px;
+}
+.wrapper-backgroundProps .detailButton{
+    display: flex;
+}
+.wrapper-backgroundProps .detailButton .optionBorder{
+    height: 34px;
+    width: 82px;
+    margin-top: 3px;
+    border-radius: 3px;
+    border-color: #d6d6d6;
+    outline: none;
+}
+
+.wrapper-backgroundProps .detailButton input{
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dfe0e4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    padding: 2px;
+    width: 38px;
+}
+.wrapper-backgroundProps .detailButton input a{
+    border: 1px solid #dfe0e4;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 32px;
+    position: relative;
+    width: 32px;
+}
+.optionBorder {
+    margin-right: 12px;
+}

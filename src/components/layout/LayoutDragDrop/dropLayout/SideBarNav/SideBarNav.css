@@ -2,11 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e5e5e5;
+    background-color: #edeef2;
     flex-grow: 1;
+    height: 40px;
 }
 
 .SideBarNav.Active {
     background-color: #fff;
     border-bottom: none;
+    height: 40px;
 }

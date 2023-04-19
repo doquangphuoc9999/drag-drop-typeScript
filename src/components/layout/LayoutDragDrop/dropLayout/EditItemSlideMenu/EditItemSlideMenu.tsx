@@ -1,3 +1,4 @@
+import DetailStyleButtonPanel from '../DetailStyleButtonPanel/DetailStyleButtonPanel';
 import './EditItemSlideMenu.css'
 
 export interface EditItemSlideMenuData {
@@ -7,17 +8,17 @@ export interface EditItemSlideMenuData {
 
 export interface EditItemSlideMenuProps {
     typeName: string | null,
-    dragElement?: React.RefObject<HTMLDivElement>
+    dragElement?: React.RefObject<HTMLDivElement>,
+    dragStart: (event: React.DragEvent<HTMLDivElement>) => void
 }
 
 const EditItemSlideMenu: React.FC<EditItemSlideMenuProps> = ({
     typeName,
-    dragElement
 }) => {
 
     return <div 
         className={`EditItemSlideMenu ${typeName == null ? "Hidden" : ""}`}>
-        <span>sss {typeName}</span>
+        <DetailStyleButtonPanel />
     </div>
 };
 

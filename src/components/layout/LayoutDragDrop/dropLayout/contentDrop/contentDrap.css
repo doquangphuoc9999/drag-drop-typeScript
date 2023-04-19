@@ -1,0 +1,76 @@
+.contentDrap {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    width: 100%;
+}
+
+.contentDrap input:hover {
+    border: 1px dotted;
+    border-color: #6e6e6e;
+}
+
+.contentDrap input:active {
+    border: 1px dotted;
+    border-color: #6e6e6e;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    height: 52px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contentDrap:hover {
+    border: 1px solid #918b8b;
+    padding: 13px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.contentDrap:active {
+    border: 1px solid #918b8b;
+    padding: 13px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.styleHref {
+    text-decoration: none;
+    color: #747579;
+    font-size: 12px;
+}
+
+.stylebuttoon {
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    color: #747579;
+}
+
+.removeDrop {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    margin-bottom: 12px;
+    left: 10%;
+}
+
+.hidden-div {
+    position: absolute;
+    right: 49%;
+    margin-bottom: 1%;
+    display: none;
+    
+}
+
+.imge-rac{
+    margin-left: 3px;
+    margin-bottom: 8px;
+}
+/* modal */

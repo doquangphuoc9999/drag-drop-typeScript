@@ -1,0 +1,48 @@
+.titelButtonDetail {
+    color: #202124;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 19px 0 20px;
+}
+
+.contentDetailButton {
+    color: #414245;
+    font-size: 13px;
+    line-height: 1.57;
+}
+
+.setBackgroup-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+}
+
+.setBackgroup-div .wrapper-input input {
+    height: 38px;
+    width: 38px;
+    border-color: 1px solid rgb(223, 224, 228);
+}
+
+.setBackgroup-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setBackgroup-body .wrapper-style-border {
+    display: flex;
+}
+
+.setBackgroup-body .wrapper-style-border input {
+    height: 38px;
+    width: 38px;
+    border-color: 1px solid rgb(223, 224, 228);
+}
+.optionBorder{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(223, 224, 228);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0px 12px;
+    margin-right: 15px;
+}

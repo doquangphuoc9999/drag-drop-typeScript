@@ -1,0 +1,20 @@
+.wrapper-menu{
+    border-bottom: solid 2px #e6e6e6;
+    text-align: center;
+    position: relative;
+    z-index: 100000;
+    background: #fff;
+    display: flex;
+    width: 100vw;
+}
+
+.listItem{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.listItem li{
+    color: #BCBDC1;
+}

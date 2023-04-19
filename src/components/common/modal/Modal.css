@@ -1,0 +1,81 @@
+.modal,
+.modal::after {
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.modal {
+    overflow-y: scroll;
+    z-index: 1000001;
+}
+
+.btn.tertiary {
+    background: rgb(237, 238, 242);
+    color: rgb(32, 33, 36);
+}
+
+.btn.large,
+.btn.medium {
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.btn {
+    background: rgb(237, 238, 242);
+    border: 0px;
+    border-radius: 4px;
+    color: rgb(65, 66, 69);
+    display: inline-block;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    line-height: 1 !important;
+}
+
+.btn.blue,
+.btn.secondary {
+    background: rgb(116, 117, 121);
+    color: rgb(255, 255, 255) !important;
+}
+
+.btn,
+pre {
+    box-sizing: border-box;
+}
+
+.modal-body {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.modal.dialog .modal-body {
+    background: rgb(171 171 171);
+    box-sizing: border-box;
+    padding: 40px 50px 0px;
+    width: 360px;
+}
+
+.modal.dialog .modal-body h1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+    color: #253c50;
+}
+
+.modal-footer {
+    padding: 40px 0px 30px;
+    text-align: center;
+}
+
+.modal-footer .btn {
+    margin: 0px 5px;
+    width: 99px;
+}

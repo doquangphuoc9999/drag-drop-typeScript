@@ -1,6 +1,6 @@
 .drapdropStyles {
     width: 100%;
-    height: 100vh;
+    height: 87vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -12,4 +12,31 @@
 .dragStyle {
     border-right: 2px solid #dfdfdf;
     margin-right: 2%;
+}
+
+.contentStatus {
+    border-bottom: solid 2px #e6e6e6;
+}
+
+.listButtonStatus {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.listButtonStatus li {
+    font-size: 12px;
+}
+
+.listButtonStatus li .listButtonReposive {
+    background: #edeef2;
+}
+
+.listButtonStatus li .listButtonReposive .buttonListReposive {
+    border: none;
+}
+
+.dropHere {
+    width: 100%;
+    height: 100vh;
 }

@@ -4,8 +4,7 @@ export interface SideBarNavProps {
     id: number
     navName: string,
     isActive: boolean,
-    handleClick: (id: number) => void,
-    dragElement?: React.RefObject<HTMLDivElement>
+    handleClick: (id: number) => void
 };
 
 const SideBarNav: React.FC<SideBarNavProps> = ({
@@ -13,9 +12,8 @@ const SideBarNav: React.FC<SideBarNavProps> = ({
     navName,
     isActive,
     handleClick,
-    dragElement
 }) => {
-    return <div ref={dragElement}
+    return <div draggable={true}
         className={`SideBarNav ${isActive ? "Active" : ""}`} 
         onClick={() => handleClick(id)}>
         <span>{navName}</span>

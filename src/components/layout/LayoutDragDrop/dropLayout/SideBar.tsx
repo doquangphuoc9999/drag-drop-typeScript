@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
-import SideBarNav from "./SideBarNav/SideBarNav";
-import './SideBar.css'
-import SideBarContentWrapper from "./SideBarContentWrapper/SideBarContentWrapper";
 import ButtonsPanel from "./ButtonsPanel/ButtonsPanel";
-import EditItemSlideMenu from "./EditItemSlideMenu/EditItemSlideMenu";
+import DetailStyleButtonPanel from "./DetailStyleButtonPanel/DetailStyleButtonPanel";
+import './SideBar.css';
+import SideBarContentWrapper from "./SideBarContentWrapper/SideBarContentWrapper";
+import SideBarNav from "./SideBarNav/SideBarNav";
 
 interface Nav {
     id: number
@@ -13,25 +13,23 @@ interface Nav {
 
 const DEFAULT_NAVS: Nav[] = [{
     id: 1,
-    name: "Buttons"
+    name: "상자"
 }, {
     id: 2,
-    name: "Details"
+    name: "스타일"
 }];
 
 export interface SideBarProps {
-    typeName: string | null,
-    dragElement?: React.RefObject<HTMLDivElement>
+    typeName: string | null
 }
 
-const SideBar: React.FC<SideBarProps> = ({typeName, dragElement}) => {
+const SideBar: React.FC<SideBarProps> = ({ }) => {
     const [activeNav, setActiveNav] = useState<number>(1);
     const [navs, _setNavs] = useState<Nav[]>(DEFAULT_NAVS);
 
     return (
         <Box>
             <div className="SideBar">
-                <EditItemSlideMenu typeName={typeName} dragElement={dragElement} />
                 <div className="NavBar">
                     {navs.map((nav: Nav, index: number) => <SideBarNav
                         key={index}
@@ -39,16 +37,17 @@ const SideBar: React.FC<SideBarProps> = ({typeName, dragElement}) => {
                         navName={nav.name}
                         isActive={activeNav === nav.id}
                         handleClick={() => setActiveNav(nav.id)}
-                        dragElement={dragElement}
                     />)}
                 </div>
                 <SideBarContentWrapper>
-                    {activeNav == 1 ? <ButtonsPanel/> : <div>This is Details panel</div>}
-                </SideBarContentWrapper>
+                        {activeNav == 1 ?
+                            <ButtonsPanel />
+                            :
+                            <DetailStyleButtonPanel />}
+                    </SideBarContentWrapper>
             </div>
         </Box>
     )
-
 }
 
 export default SideBar;

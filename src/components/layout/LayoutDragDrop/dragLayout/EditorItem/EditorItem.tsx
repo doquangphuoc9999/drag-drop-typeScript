@@ -1,3 +1,7 @@
+import { useRef } from "react";
+import ContentDrop from "../../dropLayout/contentDrop/ContentDropForm"
+import './EditorItem.css'
+
 export interface EditorItemData {
     typeId: number,
     typeName: string
@@ -5,15 +9,30 @@ export interface EditorItemData {
 
 export interface EditorItemProps {
     itemData: EditorItemData
-    handleClick: (typeName: string) => void,
-    dropContainer?: React.RefObject<HTMLDivElement>
+    handleClick: () => void,
+    content: string,
+    removeAndHiddenModal: () => void,
+    hiddenModal: () => void,
+    isShowModal: boolean,
+    showModal: () => void
 }
 
 
-const EditorItem: React.FC<EditorItemProps> = ({itemData, handleClick,dropContainer}) => {
+const EditorItem: React.FC<EditorItemProps> = ({ removeAndHiddenModal, hiddenModal, isShowModal, handleClick, showModal }) => {
     return (
-        <div onClick={() => handleClick(itemData.typeName)} className="Editoritem" ref={dropContainer}>
-             type {itemData.typeId} name {itemData.typeName}
+        <div
+            draggable="true"
+            onClick={() => handleClick()}
+            className="editoritem"
+        >
+            <ContentDrop
+                isShowModal={isShowModal}
+                removeAndHiddenModal={removeAndHiddenModal}
+                handlerClick={handleClick}
+                text="이 메일이 잘 안보이시나요?"
+                hiddenModal={hiddenModal}
+                showModal={showModal}
+            />
         </div>
     )
 }
